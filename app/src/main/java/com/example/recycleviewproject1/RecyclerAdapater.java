@@ -16,13 +16,13 @@ import java.util.ArrayList;
         public static class RecyclerViewHolder extends RecyclerView.ViewHolder{
             public ImageView mimageView;
             public TextView mtextView1;
-            public TextView  aVal;
+
             public ImageView ColorRes;
             public RecyclerViewHolder( View itemView) {
                 super(itemView);
                 mimageView=itemView.findViewById(R.id.restimg);
                 mtextView1=itemView.findViewById(R.id.RestName);
-                aVal=itemView.findViewById(R.id.aval);
+
 
 
                 ColorRes=itemView.findViewById(R.id.RestRes);
@@ -46,7 +46,7 @@ import java.util.ArrayList;
             RecyclerItem currentItem=recyclerItems.get(position);
             Holder.mimageView.setImageResource(currentItem.getmImageRes());
             Holder.mtextView1.setText(currentItem.getmText1());
-            Holder.aVal.setText(currentItem.getAval());
+
 
             Holder.ColorRes.setImageResource(currentItem.getmImageRes3());
 
